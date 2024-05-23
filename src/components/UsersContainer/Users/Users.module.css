@@ -1,0 +1,4 @@
+.list_of_users {
+    display: flex;
+    flex-wrap: wrap;
+}
