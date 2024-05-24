@@ -1,7 +1,8 @@
-import {createAsyncThunk, createSlice, isFulfilled} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {AxiosError} from "axios";
+
 import {IUser} from "../../interfaces";
-import {userService} from "../../services/userService";
+import {userService} from "../../services";
 
 interface IState {
     users: IUser[],
@@ -12,7 +13,7 @@ const initialState: IState = {
 };
 
 const getAll = createAsyncThunk<IUser[], void>(
-    'carSlice/getAll',
+    'userSlice/getAll',
     async (_, {rejectWithValue}) => {
         try {
             const {data} = await userService.getAll();

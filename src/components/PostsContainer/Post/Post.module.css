@@ -1,15 +1,22 @@
-.User {
+.Post {
     border: 1px solid;
     width: calc(50% - 2px);
-    height: 19.72vh;
-    font-size: 2vh;
+    height: 18.73vh;
+    font-size: 1.8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.User:hover {
+.Box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Post:hover {
     cursor: pointer;
     background-color: rgb(116, 112, 112);
 }
@@ -19,4 +26,5 @@
 
 .Btn {
     width: 5vw;
+    margin-top: 10px;
 }

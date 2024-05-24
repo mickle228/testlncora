@@ -1,4 +1,4 @@
-import {Users} from "../components/UsersContainer/Users/Users";
+import {Users} from "../components";
 
 const UsersPage = () => {
     return (

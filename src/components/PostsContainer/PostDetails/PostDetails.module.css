@@ -1,0 +1,27 @@
+.list_of_posts {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1vw;
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns {
+    display: flex;
+}
+.middleBox {
+    width: 100px;
+}

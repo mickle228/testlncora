@@ -1,6 +1,6 @@
 import {apiService} from "./apiService";
 import {urls} from "../constants";
-import {IRes} from "../types/responseType";
+import {IRes} from "../types";
 import {IUser} from "../interfaces";
 
 const userService = {

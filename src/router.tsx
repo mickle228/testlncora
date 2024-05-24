@@ -1,6 +1,6 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
 
-import {UsersPage} from "./pages/UsersPage";
+import {PostDetailsPage, PostsPage, UsersPage} from "./pages";
 import {MainLayout} from "./layouts";
 
 const router = createBrowserRouter([
@@ -11,6 +11,12 @@ const router = createBrowserRouter([
                 },
                 {
                     path: 'users', element: <UsersPage/>
+                },
+                {
+                    path: 'user/:id/posts', element: <PostsPage/>
+                },
+                {
+                    path: 'posts/:id', element: <PostDetailsPage/>
                 }
             ]
         }
